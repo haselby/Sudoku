@@ -38,17 +38,31 @@ void PrintPuzzle(grid_type myPuzzle){
 
 std::string DefinePuzzle(){
     //Define Sudoku Puzzle to solve
-//Use 0 to indicate empty cell
+    //Use 0 to indicate empty cell
+
+    //Easy Puzzle
+    //std::string puzzleRaw_{};
+    //puzzleRaw_.append("400689200");
+    //puzzleRaw_.append("380400600");
+    //puzzleRaw_.append("201300800");
+    //puzzleRaw_.append("008067032");
+    //puzzleRaw_.append("056090080");
+    //puzzleRaw_.append("030850096");
+    //puzzleRaw_.append("600000175");
+    //puzzleRaw_.append("004021008");
+    //puzzleRaw_.append("807006000");
+
+    //Difficult Puzzle
     std::string puzzleRaw_{};
-    puzzleRaw_.append("400689200");
-    puzzleRaw_.append("380400600");
-    puzzleRaw_.append("201300800");
-    puzzleRaw_.append("008067032");
-    puzzleRaw_.append("056090080");
-    puzzleRaw_.append("030850096");
-    puzzleRaw_.append("600000175");
-    puzzleRaw_.append("004021008");
-    puzzleRaw_.append("807006000");
+    puzzleRaw_.append("000000200");
+    puzzleRaw_.append("300040000");
+    puzzleRaw_.append("010008900");
+    puzzleRaw_.append("420050090");
+    puzzleRaw_.append("007010500");
+    puzzleRaw_.append("000600020");
+    puzzleRaw_.append("070103000");
+    puzzleRaw_.append("280700000");
+    puzzleRaw_.append("503000800");
 
     return puzzleRaw_;
 }
