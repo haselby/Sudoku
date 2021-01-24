@@ -91,6 +91,38 @@ bool IsValidGuess(grid_type puzzle, int guess, int row, int column) {
 
     //TODO: Add sub matrix check
 
+    int row_start, row_end, column_start, column_end;
+
+    if (row <= 2) {
+    row_start = 0;
+    row_end = 2;
+    }
+    else if (row <= 5) {
+    row_start = 3;
+    row_end = 5;
+    }
+    else {
+    row_start = 6;
+    row_end = 8;
+    }
+
+    if (column <= 2) {
+        column_start = 0;
+        column_end = 2;
+    }
+    else if (column <= 5) {
+        column_start = 3;
+        column_end = 5;
+    }
+    else {
+        column_start = 6;
+        column_end = 8;
+    }
+
+    for (index i = row_start; i <= row_end; ++i)
+        for (index j = column_start; j <= column_end; ++j)
+            if (puzzle[i][j] == guess) return false;
+
     return true;
     
 }
